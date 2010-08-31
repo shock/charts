@@ -1,0 +1,8 @@
+<% controller.set_flash_compatibility( false ) %>
+<div class="plain" title='<a href="http://code.google.com/apis/chart/">Google Charts</a> c/o <a href="http://code.google.com/p/gchartrb/">ghartrb</a>'>
+  <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
+</div><br/>
+<% controller.set_flash_compatibility( true ) %>
+<div class="plain" title='<a href="http://www.amcharts.com/">amCharts</a> c/o <a href="http://github.com/ahobson/ambling/">ambling</a>'>
+  <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
+</div><br/>
