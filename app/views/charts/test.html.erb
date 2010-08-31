@@ -1,8 +1,36 @@
-<% controller.set_flash_compatibility( false ) %>
-<div class="plain" title='<a href="http://code.google.com/apis/chart/">Google Charts</a> c/o <a href="http://code.google.com/p/gchartrb/">ghartrb</a>'>
-  <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
-</div><br/>
-<% controller.set_flash_compatibility( true ) %>
-<div class="plain" title='<a href="http://www.amcharts.com/">amCharts</a> c/o <a href="http://github.com/ahobson/ambling/">ambling</a>'>
-  <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
-</div><br/>
+<div class="floater">
+  <div class="plain" title='<a href="http://code.google.com/apis/chart/">Google Charts</a> c/o <a href="http://code.google.com/p/gchartrb/">ghartrb</a>'>
+    <% controller.set_flash_compatibility( false ) %>
+    <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
+  </div>
+</div>
+
+
+<div class="floater">
+  <div class="plain" title='<a href="http://www.amcharts.com/">amCharts</a> c/o <a href="http://github.com/ahobson/ambling/">ambling</a>'>
+    <% controller.set_flash_compatibility( true ) %>
+    <%= chart_composition( [["Siamese", 2], ["Calico", 3], ["Black", 8]], {:width=>400, :height=>300, :title=>"Cats", :background=>'cccccc' } ) %>
+  </div>
+</div>
+
+<div class="floater">
+  <div class="plain" title='<a href="http://www.amcharts.com/">amCharts</a> c/o <a href="http://github.com/ahobson/ambling/">ambling</a>'>
+    <%= am_chart_trend( {:series=>["Mon", "Tue", "Wed", "Thu"], :lines=>[["New York", [89,88,82,89]], ["Austin", [97,99,95,99]]], :width=>400, :height=>300, :title=>"Temperature", :background=>'cccccc'} ) %>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="floater">
+  <div class="plain" title='Some Javascript Charting Packages' style="padding: 15px;width: 370px; height: 270px;">
+    <ul>
+      <li><a href="http://www.jscharts.com/">JS Charts</a></li>
+      <li><a href="http://www.ejschart.com/">Emprise</a></li>
+      <li><a href="http://www.highcharts.com/">High Charts</a></li>
+      <li><a href="http://raphaeljs.com/">Raphaël JS Library (Free)</a></li>
+    </ul>
+  </div>
+</div>
